@@ -148,7 +148,7 @@ export default function RegisterPage() {
 
   // Render form steps conditionally
   return (
-    <div className="container flex justify-center items-top w-10/12 h-full">
+    <div className="container flex justify-center items-top w-10/12 h-full font-noto-thai">
       <div className='container mx-auto py-5 flex flex-col justify-top items-center'>
         {currentStep === 1 && (
           <div className="flex flex-col justify-center w-5/12 text-xs">

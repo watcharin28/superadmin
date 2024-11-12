@@ -1,0 +1,121 @@
+/* styles.css */
+.card {
+    position: relative;
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    width: 8.5rem;
+    height: 11rem;
+    padding: 0rem;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.card-paid::before,
+.card-unpaid::before,
+.card-vacant::before,
+.card-billing::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4rem;
+    background-image: url("./img/Vector1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: -5px;
+    left: 0;
+    z-index: 0;
+}
+
+.card-paid::after,
+.card-unpaid::after,
+.card-vacant::after,
+.card-billing::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3rem;
+    background-image: url("./img/Vector2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.card-paid::before {
+    background-image: url("./img/Vector1.png");
+}
+
+.card-paid::after {
+    background-image: url("./img/Vector2.png");
+}
+
+.card-unpaid::before {
+    background-image: url("./img/Vector3.png");
+}
+
+.card-unpaid::after {
+    background-image: url("./img/Vector4.png");
+}
+
+.card-vacant::before {
+    background-image: url("./img/Vector5.png");
+}
+
+.card-vacant::after {
+    background-image: url("./img/Vector6.png");
+}
+
+.card-billing::before {
+    background-image: url("./img/Vector7.png");
+}
+
+.card-billing::after {
+    background-image: url("./img/Vector8.png");
+}
+
+
+@media (max-width: 1024px) {
+    .card {
+        position: relative;
+        padding: 1rem;
+        border-radius: 6px;
+        background-color: #f0f0f0;
+        overflow: hidden;
+        width: 6rem;
+        height: 8rem;
+        padding: 0rem;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .card-paid::before,
+    .card-unpaid::before,
+    .card-vacant::before,
+    .card-billing::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3.5rem;
+        top: -5px;
+        left: 0;
+        z-index: 0;
+    }
+
+    .card-paid::after,
+    .card-unpaid::after,
+    .card-vacant::after,
+    .card-billing::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2.5rem;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+    }
+}
