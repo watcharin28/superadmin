@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-
 import Image from 'next/image';
 
 export default function Navbar({ activeTab, setActiveTab }) {
@@ -17,24 +16,18 @@ export default function Navbar({ activeTab, setActiveTab }) {
           >
             DASHBOARD
           </button>
-          {/* <button
+          <button
             onClick={() => setActiveTab(2)}
             className={`px-4 py-3 rounded-md ${activeTab === 2 ? 'ml-4 bg-[#EDF1FF] font-black hover:bg-[#EDF1FF] w-full' : 'bg-white hover:bg-[#f9faff] rounded-md w-11/12'}`}
           >
-            METER
+            จัดการเจ้าของหอพัก
           </button>
           <button
             onClick={() => setActiveTab(3)}
             className={`px-4 py-3 rounded-md ${activeTab === 3 ? 'ml-4 bg-[#EDF1FF] font-black hover:bg-[#EDF1FF] w-full' : 'bg-white hover:bg-[#f9faff] rounded-md w-11/12'}`}
           >
-            BILLING
+            ดูรายการหอพัก
           </button>
-          <button
-            onClick={() => setActiveTab(4)}
-            className={`px-4 py-3 rounded-md ${activeTab === 4 ? 'ml-4 bg-[#EDF1FF] font-black hover:bg-[#EDF1FF] w-full' : 'bg-white hover:bg-[#f9faff] rounded-md w-11/12'}`}
-          >
-            TENANT
-          </button> */}
         </div>
       </div>
       <div className="flex flex-col w-full items-center text-[#4700a2]">
@@ -43,8 +36,8 @@ export default function Navbar({ activeTab, setActiveTab }) {
             <Image src="/user.png" alt="User" width={40} height={40} />
           </div>
           <div className="UserName font-noto-thai">
-            <h3 id="UserRes" className="text-sm font-bold">Wachawich</h3>
-            <p className="text-xs">สวนธนอพาตเมนท์</p>
+            <h3 id="UserRes" className="text-sm font-bold">Watcharin</h3>
+            <p className="text-xs">Superadmin</p>
           </div>
         </div>
         <div className="logOut mt-4 flex font-bold w-11/12 pl-3 p-2 hover:bg-[#EDF1FF] rounded-md cursor-pointer">
